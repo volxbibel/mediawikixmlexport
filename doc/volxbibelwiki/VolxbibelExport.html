@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VolxbibelExport</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VolxbibelExport</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Export der Volxbibel in XML für Oldmedia/R. Brockhaus Verlag</p>
+<p class="description"><p>Speichert ein XML</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="http://wiki.volxbibel.com">http://wiki.volxbibel.com</a></li>
+				<li><span class="field">version:</span> 0.1</li>
+				<li><span class="field">author:</span> Simon Brüchner, 2007</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_export.php.html">/export.php</a> (line <span class="field"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a22">22</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$buch" title="details" class="var-name">$buch</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$buchKapitel" title="details" class="var-name">$buchKapitel</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$buchTitel" title="details" class="var-name">$buchTitel</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$error" title="details" class="var-name">$error</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$kapitelArray" title="details" class="var-name">$kapitelArray</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$kapitelContent" title="details" class="var-name">$kapitelContent</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$log" title="details" class="var-name">$log</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$pageTitle" title="details" class="var-name">$pageTitle</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$XML" title="details" class="var-name">$XML</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																						
+				<div class="method-definition">
+											<span class="method-result">VolxbibelExport</span>
+										<a href="#VolxbibelExport" title="details" class="method-name">VolxbibelExport</a>
+											(<span class="var-type">String</span>&nbsp;<span class="var-name">$buch</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$nummer</span> = <span class="var-default">NULL</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$showXML</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">XML</span>
+										<a href="#formatAsXML" title="details" class="method-name">formatAsXML</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Array</span>
+										<a href="#getHeadlinesAndContent" title="details" class="method-name">getHeadlinesAndContent</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getWikiExport" title="details" class="method-name">getWikiExport</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$kapitelToParse</span> = <span class="var-default">FALSE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#l" title="details" class="method-name">l</a>
+											(<span class="var-type">String</span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type">String</span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">'debug'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBuchUebersichtContent" title="details" class="method-name">setBuchUebersichtContent</a>
+											(<span class="var-type">Array</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setKapitelContent" title="details" class="method-name">setKapitelContent</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$buch" id="$buch"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$buch</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a26">26</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Buch welches ausgegeben werden soll</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$buchKapitel" id="$buchKapitel"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$buchKapitel</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a78">78</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Die Buchübersichtsseite im MediaWiki-Syntax formatiert</p>
+<p class="description"><p>Nur der Relevante Teil aus dem XML-Export. Als Array.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$buchTitel" id="$buchTitel"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$buchTitel</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a71">71</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$error" id="$error"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$error</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a38">38</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Schwerer Fehler</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$kapitelArray" id="$kapitelArray"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$kapitelArray</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a66">66</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Das Kapitel als Array mit Überschriften, Versnummern und Verstext</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$kapitelContent" id="$kapitelContent"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$kapitelContent</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a59">59</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Das Kapitel im MediaWiki-Syntax formatiert</p>
+<p class="description"><p>Nur der Relevante Teil aus dem XML-Export. Als Array.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$log" id="$log"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$log</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a33">33</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array mit Logeinträgen bei Fehlern und Meldungen für Benutzer</p>
+<p class="description"><p>Format: Array[level] -&gt; Meldung</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$pageTitle" id="$pageTitle"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$pageTitle</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a52">52</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Seitentitel unter welchen ein Kapitel oder eine Buchübersichtsseite im</p>
+<p class="description"><p>Volxbibel-MediaWiki liegt. Z.B.: &quot;1.Korinther 13&quot;</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$XML" id="$XML"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$XML</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a46">46</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Der Volxbibel-MediaWiki XML Export einer Seite</p>
+<p class="description"><p>Wird über folgende URI für z.B.: 1. Korinther 13 aufgerufen: http://wiki.  volxbibel. com/index. php/Spezial:Export/1.Korinther_13</p></p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodVolxbibelExport" id="VolxbibelExport"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor VolxbibelExport</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a91">91</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Konstruktor</p>
+<p class="description"><p>Exportiert eine Buch</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">todo:</span> $html auslagern bzw. Klasse soll nur das Log Array ausgeben</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">VolxbibelExport</span>
+		<span class="method-name">
+			VolxbibelExport
+		</span>
+					(<span class="var-type">String</span>&nbsp;<span class="var-name">$buch</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$nummer</span> = <span class="var-default">NULL</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$showXML</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$buch</span><span class="var-description">: Buchname</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$nummer</span><span class="var-description">: Ordungsnummer in der Bibel</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$showXML</span><span class="var-description">: XML in Browser ausgeben</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodformatAsXML" id="formatAsXML"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">formatAsXML</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a315">315</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Formatiert ein Buch nach XML Vorgaben von Oldmedia</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Formatiertes Buch in XML</li>
+				<li><span class="field">todo:</span> pageTitel zu jedem Titel bereit halten, damit Kommentar  hinzugefügt werden kann</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">XML</span>
+		<span class="method-name">
+			formatAsXML
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHeadlinesAndContent" id="getHeadlinesAndContent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHeadlinesAndContent</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a262">262</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parst das Kapitel nach Überschriften, Versnummern und Verstext</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> &lt;div id=&quot;pre&quot;&gt;                      Kapitel [level]                      Kapitel    [verse]                      Kapitel    [verse][int Versnummer] -&gt; Verstext                      &lt;/div&gt;</li>
+				<li><span class="field">todo:</span> deutsche Umlaute/Satzzeichen bei Anchor für Link direkt zum  Abschnitt ersetzen, hier gibt es ein Encoding/Unicode/HTML Problem</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Array</span>
+		<span class="method-name">
+			getHeadlinesAndContent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetWikiExport" id="getWikiExport"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getWikiExport</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a156">156</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holt das XML des Volxbibel-MediaWiki</p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> Doku</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getWikiExport
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$kapitelToParse</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$kapitelToParse</span><span class="var-description">: Kapitel oder Übersichtsseite einlesen</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodl" id="l"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">l</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a371">371</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Log</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			l
+		</span>
+					(<span class="var-type">String</span>&nbsp;<span class="var-name">$msg</span>, [<span class="var-type">String</span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">'debug'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$msg</span><span class="var-description">: Log Meldung</span>			</li>
+					<li>
+				<span class="var-type">String</span>
+				<span class="var-name">$level</span><span class="var-description">: Log Level 'error', 'info' oder 'debug'</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBuchUebersichtContent" id="setBuchUebersichtContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBuchUebersichtContent</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a183">183</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gibt den Buchtitel und die Kapitelnamne einer Buchseite aus</p>
+<p class="description"><p>Buchtitel = Sprechende Beschreibung eines Buches z.B.: &quot;Die Geschichte  von den Aposteln&quot;</p><p>Kapitelnamen = Namen der Seiten der Kapitel im Volxbibel- MediaWiki z.B.:  &quot;Apostelgeschichte 1&quot;</p></p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> Es kann auch Buchbeschreibungen geben, siehe: http://wiki.  volxbibel.com/index.php/Apostelgeschichte</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBuchUebersichtContent
+		</span>
+					(<span class="var-type">Array</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Array</span>
+				<span class="var-name">0</span><span class="var-description">: KapitelTitel-&gt;KapitelNamen</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetKapitelContent" id="setKapitelContent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setKapitelContent</span> (line <span class="line-number"><a href="../__filesource/fsource_volxbibelwiki__export.php.html#a227">227</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Der für das Kapitel relevante Teil aus dem XML-Export</p>
+<p class="description"><p>Formatvorlage im Volxbibel-MediaWiki muss unbedingt beachtet werden!  Z.B.: &quot;__TOC__&quot; und &quot;__NOTOC__&quot; müssen vorkommen!</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+				<li><span class="field">todo:</span> Mehrfache Fundstellen abfangen als Fehler</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setKapitelContent
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 06 Feb 2007 22:39:17 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.1</a>
+	</p>
+	</div></body>
+</html>
